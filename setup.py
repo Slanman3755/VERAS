@@ -13,14 +13,18 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/slanman3755/VERAS",
     packages=find_packages(exclude='tests'),
+    scripts=[
+        "scripts/ping_database.py",
+        "scripts/route.py",
+        ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.9, <4',
+    python_requires=">=3.9, <4",
     install_requires=[
-        'click>=7.1.2',
-        'neo4j-driver>=4.2.1',
+        "click>=7.1.2",
+        "neo4j-driver>=4.2.1",
     ],
 )

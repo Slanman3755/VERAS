@@ -1,3 +1,5 @@
+#! python
+
 import click
 import veras
 
@@ -9,7 +11,7 @@ def route(origin, destination):
     """Print route between origin and destination airports.
 
     ORIGIN is the ICAO identifier of the origin airport
-    DESTINATION is the ICAO identigier of the destination airport"""
+    DESTINATION is the ICAO identifier of the destination airport"""
     print(veras.router.find_route(origin, destination))
 
 
